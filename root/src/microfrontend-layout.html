@@ -1,0 +1,36 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <header>
+      <div style="background-color: black; padding: 20px; margin-bottom: 15px;">
+        <application name="@stake/super"></application>
+      </div>
+      <div style="background-color: black; padding: 20px; margin-bottom: 15px;">
+        <application name="@stake/customer"></application>
+      </div>
+    </header>
+    <!-- <route default>
+      <application name="@single-spa/welcome"></application>
+    </route> -->
+    <footer>
+      <application name="@stake/footer"></application>
+    </footer>
+  </main>
+</single-spa-router>

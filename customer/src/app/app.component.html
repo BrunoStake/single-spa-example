@@ -1,0 +1,28 @@
+
+<style>
+  span.users, h1.title{
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44); 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+  }
+
+  li{
+    padding-bottom: 15px;
+  }
+</style>
+
+<div>
+  <h1 class="title">Stake Customer on!</h1>
+
+  <ul>
+    <li *ngFor="let item of users">
+      <span class="users">
+        {{item}}
+    </span>
+    </li>
+  </ul>
+  
+</div>
+
+
+<router-outlet></router-outlet>
